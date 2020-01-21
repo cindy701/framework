@@ -4,13 +4,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class LoginPage {//div[@class='ui fluid large blue submit button']
+public class LoginPage {
 	
-	WebDriver driver;
+	WebDriver driver; //Global variable
 	
 	public LoginPage(WebDriver driver) {
 		
+		
 		this.driver = driver;
+		
 	}
 	
 	@FindBy(name="email") WebElement uName;
